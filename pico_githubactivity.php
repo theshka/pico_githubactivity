@@ -6,19 +6,7 @@
  * @author Tyler Heshka
  * @link http://heshka.com
  * @license http://opensource.org/licenses/MIT
- *
- * Requires:
- * - jQuery (not included)
- * - moment.js (included via CDN)
- *
- * Install:
- * - Include pico_githubactivity.php in your /plugins directory.
- * - Include {{ page.github }} in your theme.
- *
- * Settings:
- * - Add $settings['GitHub']['username'] = ''; to your config. 
- * - Add $settings['GitHub']['posts'] = ''; to your config. 
- * - Replace username & posts with your desired setting.
+ * @version 0.0.0
  */
  
 class Pico_GitHubActivity {
@@ -130,7 +118,7 @@ class Pico_GitHubActivity {
 				margin-right: 20px;
 			}
 			.github-event .event-content {
-				font-size: 1.9rem;
+				font-size: 1.5rem;
 			}
 			.github-event .event-content span { font-weight: bold; }
 			
