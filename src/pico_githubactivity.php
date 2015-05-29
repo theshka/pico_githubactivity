@@ -4,7 +4,8 @@
  * Add your public GitHub activity stream to Pico!
  *
  * @author Tyler Heshka
- * @link http://heshka.com
+ * @link https://keybase.io/theshka
+ * @example http://heshka.com/projects
  * @license http://opensource.org/licenses/MIT
  * @version 0.0.0
  */
