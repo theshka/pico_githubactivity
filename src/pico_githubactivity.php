@@ -5,7 +5,7 @@
  *
  * @author Tyler Heshka
  * @link https://keybase.io/theshka
- * @example http://heshka.com/projects
+ * @example http://tyrexi.us/projects
  * @license http://opensource.org/licenses/MIT
  * @version 0.0.0
  */
