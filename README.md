@@ -1,22 +1,46 @@
 # Pico GitHub Activity Plugin
 
-## Requirements 
-- jQuery 
+## Requirements
+- jQuery (included via CDN)
 - moment.js (included via CDN)
 
 ## Install
-- Copy pico_githubactivity.php to your /plugins directory
-- Insert {{ GitHub }} in your template. 
-- Configure 
+- Copy `PicoGitHubActivity.php` to your `plugins` directory
+- Copy & Paste the configuration array below in `config/config.php`
+- Insert `{{ PicoGitHubActivity.rendered }}` in your template.
 
 ## Settings
-- `$config['GitHub']['username'] = '';`
-- `$settings['GitHub']['posts'] = '';`
+```php
+/**
+ * Pico GitHib Activity Plugin Configuration
+ */
+$config['PicoGitHubActivity'] = array (
+    'enabled' => true,           // Enable this plugin?
+    'require' => array(          // Do you require:
+        'jQuery' => true,        // jQuery?
+        'momentJs' => true       // moment.js?
+    ),
+    'options' => array(
+        'username' => 'theshka', // GitHub username
+        'posts' => 10,           // How many posts?
+        'maxLength' => 100       // Max length of descriptions
+    )
+);
+```
 
-## Contribue 
-- Fork
-- Clone/Change/Push
-- Issue Pull Request
+## Twig Variables
+This variable inserts the whole plugin in one tag,
+```
+{{ PicoGitHubActivity.rendered }} // The rendered plugin
+```
+
+OR you can place these in the appropriate areas of your template:
+
+```
+{{ PicoGitHubActivity.style }}    // Just the CSS
+{{ PicoGitHubActivity.body }}     // Just the HTML
+{{ PicoGitHubActivity.script }}   // Just the JS
+```
 
 ## License
 The MIT License (MIT)
@@ -29,5 +53,3 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-
-

@@ -1,4 +1,10 @@
 Pico GitHub Activity Feed Plugin
 
-2015.04.29 v0.0
- * Initial commit 
+2015.10.08 v0.1.0
+ * [CHANGED] Updated plugin for Pico 1.0
+ * [CHANGED] Fix bug wherein the feed could not render when array key missing.
+ * [NEW] Config is now an array
+ * [NEW] Now access plugin from twig variables
+
+2015.04.29 v0.0.0
+ * Initial commit
